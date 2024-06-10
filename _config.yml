@@ -10,7 +10,7 @@
 locale                   : "China"
 title                    : "Personal Page"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Zhiyang Hu"
 description              : &description "personal description"
 url                      : https://hujiyoung.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Zhiyang Hu"
   pronouns         : # example: "she/her"  
-  bio              : "Wuhan University undergraduate majoring in Information Security, Class of 2022."
+  bio              : "Undergraduate majoring in Information Security at Wuhan University, Class of 2022."
   location         : "Wuhan, Hubei, China."
   employer         : ""
   uri              : # URL
