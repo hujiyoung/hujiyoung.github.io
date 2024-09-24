@@ -18,4 +18,4 @@ In fact, I've been conducting this research for less than a year and I'm still i
 
 As you can see, I didn't fill in all the information on my personal web page, some of the information in the website was pulled from the original repository and didn't match mine. 
 
-Due to some certain reason, forced to updated on Sep 24, 2024
+Due to some certain unspeakable reason, forced to updated on Sep 24, 2024.
