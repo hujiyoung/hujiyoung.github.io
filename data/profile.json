@@ -1,10 +1,10 @@
 {
   "name": "Zhiyang Hu",
-  "title": "Ph.D. Student & AI Researcher",
-  "email": "zhiyang.hu@example.com",
-  "location": "Beijing, China",
-  "bio": "I am a Ph.D. student interested in Large Language Models, AI Alignment, and Computer Vision. I love building cool things.",
-  "avatar": "https://ui-avatars.com/api/?name=Zhiyang+Hu&background=random&size=256",
+  "title": "Undergrad Student & AI Researcher",
+  "email": "zhiyanghu@foxmail.com",
+  "location": "Wuhan, China",
+  "bio": "I am a Undergrad student interested in Large Language Models, AI Alignment, and Computer Vision. I love building cool things.",
+  "avatar": "images/avatar.jpg",
   "social": [
     {
       "network": "GitHub",
@@ -23,7 +23,7 @@
     },
     {
       "network": "Email",
-      "url": "mailto:zhiyang.hu@example.com",
+      "url": "zhiyanghu@foxmail.com",
       "icon": "fas fa-envelope"
     }
   ]
