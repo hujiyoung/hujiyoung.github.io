@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Understanding the Reasoning of Large Language Models",
+    "authors": ["Zhiyang Hu", "Alice Researcher", "Bob Professor"],
+    "venue": "ICLR 2026",
+    "year": "2026",
+    "highlight": true,
+    "links": [
+      {"name": "PDF", "url": "#"},
+      {"name": "Code", "url": "https://github.com/hujiyoung"}
+    ],
+    "image": "https://placehold.co/600x400/222/white?text=Paper+Image"
+  },
+  {
+    "title": "Efficient Fine-tuning Strategies for Vision Transformers",
+    "authors": ["Zhiyang Hu", "Charlie Student"],
+    "venue": "CVPR 2025",
+    "year": "2025",
+    "highlight": false,
+    "links": [
+      {"name": "PDF", "url": "#"},
+      {"name": "Project Page", "url": "#"}
+    ],
+    "image": ""
+  }
+]

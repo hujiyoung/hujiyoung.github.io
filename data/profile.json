@@ -1,0 +1,30 @@
+{
+  "name": "Zhiyang Hu",
+  "title": "Ph.D. Student & AI Researcher",
+  "email": "zhiyang.hu@example.com",
+  "location": "Beijing, China",
+  "bio": "I am a Ph.D. student interested in Large Language Models, AI Alignment, and Computer Vision. I love building cool things.",
+  "avatar": "https://ui-avatars.com/api/?name=Zhiyang+Hu&background=random&size=256",
+  "social": [
+    {
+      "network": "GitHub",
+      "url": "https://github.com/hujiyoung",
+      "icon": "fab fa-github"
+    },
+    {
+      "network": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "icon": "fas fa-graduation-cap"
+    },
+    {
+      "network": "Twitter",
+      "url": "https://twitter.com/",
+      "icon": "fab fa-twitter"
+    },
+    {
+      "network": "Email",
+      "url": "mailto:zhiyang.hu@example.com",
+      "icon": "fas fa-envelope"
+    }
+  ]
+}
