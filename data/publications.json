@@ -1,24 +1,24 @@
 [
   {
-    "title": "Understanding the Reasoning of Large Language Models",
-    "authors": ["Zhiyang Hu", "Alice Researcher", "Bob Professor"],
-    "venue": "ICLR 2026",
+    "title": "DATABench: Evaluating Dataset Auditing in Deep Learning from an Adversarial Perspective",
+    "authors": ["Shuo Shao", "Yiming Li", "Mengren Zheng", "Zhiyang Hu", "Yukun Chen", "Boheng Li", "Yu He", "Junfeng Guo", "Dacheng Tao", "Zhan Qin"],
+    "venue": "arxiv 2025",
+    "year": "2025",
+    "highlight": true,
+    "links": [
+      {"name": "PDF", "url": "https://arxiv.org/abs/2507.05622"},
+      {"name": "Code", "url": "https://github.com/shaoshuo-ss/DATABench"}
+    ],
+    "image": ""
+  },
+  {
+    "title": "DREAM: Scalable Red Teaming for Text-to-Image Generative Systems via Distribution Modeling",
+    "authors": ["Boheng Li", "Junjie Wang", "Yiming Li", "Zhiyang Hu", "Leyi Qi", "Jianshuo Dong", "Run Wang", "Han Qiu", "Zhan Qin", "Tianwei Zhang"],
+    "venue": "IEEE S&P 2026",
     "year": "2026",
     "highlight": true,
     "links": [
-      {"name": "PDF", "url": "#"},
-      {"name": "Code", "url": "https://github.com/hujiyoung"}
-    ],
-    "image": "https://placehold.co/600x400/222/white?text=Paper+Image"
-  },
-  {
-    "title": "Efficient Fine-tuning Strategies for Vision Transformers",
-    "authors": ["Zhiyang Hu", "Charlie Student"],
-    "venue": "CVPR 2025",
-    "year": "2025",
-    "highlight": false,
-    "links": [
-      {"name": "PDF", "url": "#"},
+      {"name": "PDF", "url": "https://arxiv.org/abs/2507.16329"},
       {"name": "Project Page", "url": "#"}
     ],
     "image": ""
