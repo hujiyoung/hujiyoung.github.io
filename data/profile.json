@@ -23,7 +23,7 @@
     },
     {
       "network": "Email",
-      "url": "zhiyanghu@foxmail.com",
+      "url": "mailto:zhiyanghu@foxmail.com",
       "icon": "fas fa-envelope"
     }
   ]

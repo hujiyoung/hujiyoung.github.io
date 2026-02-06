@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function loadProfile() {
     try {
-        const response = await fetch('data/profile.json');
+        const response = await fetch('data/profile.json?v=' + new Date().getTime());
         const data = await response.json();
         
         // Inject Hero Content
@@ -20,7 +20,7 @@ async function loadProfile() {
             <p class="hero-bio">${data.bio}</p>
             <div class="social-links" style="justify-content: center; margin-top: 20px;">
                 ${data.social.map(link => `
-                    <a href="${link.url}" target="_blank" class="social-btn" title="${link.network}">
+                    <a href="${link.url}" ${link.url.startsWith('mailto:') ? '' : 'target="_blank"'} class="social-btn" title="${link.network}">
                         <i class="${link.icon}"></i>
                     </a>
                 `).join('')}
@@ -30,7 +30,7 @@ async function loadProfile() {
 
         // Inject Footer Social Links
         const footerLinksHTML = data.social.map(link => `
-            <a href="${link.url}" target="_blank" class="social-btn">
+            <a href="${link.url}" ${link.url.startsWith('mailto:') ? '' : 'target="_blank"'} class="social-btn">
                 <i class="${link.icon}"></i>
             </a>
         `).join('');
@@ -43,7 +43,7 @@ async function loadProfile() {
 
 async function loadNews() {
     try {
-        const response = await fetch('data/news.json');
+        const response = await fetch('data/news.json?v=' + new Date().getTime());
         const data = await response.json();
         
         const newsHTML = data.map(item => `
@@ -61,7 +61,7 @@ async function loadNews() {
 
 async function loadPublications() {
     try {
-        const response = await fetch('data/publications.json');
+        const response = await fetch('data/publications.json?v=' + new Date().getTime());
         const data = await response.json();
         
         const pubsHTML = data.map(pub => `
