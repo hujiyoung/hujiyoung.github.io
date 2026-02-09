@@ -12,32 +12,39 @@ async function loadProfile() {
         const response = await fetch('data/profile.json?v=' + new Date().getTime());
         const data = await response.json();
         
-        // Inject Hero Content
+        // Generate Social Links List (Vertical, Icon + Text)
+        const socialListHTML = data.social.map(link => `
+            <a href="${link.url}" ${link.url.startsWith('mailto:') ? '' : 'target="_blank"'} class="social-list-item">
+                <span class="social-icon-wrapper"><i class="${link.icon}"></i></span>
+                <span class="social-text">${link.network}</span>
+            </a>
+        `).join('');
+
+        // New Two-Column Layout
         const heroHTML = `
-            <img src="${data.avatar}" alt="${data.name}" class="hero-avatar">
-            <h1 class="hero-name">${data.name}</h1>
-            <h2 class="hero-title">${data.title}</h2>
-            <p class="hero-bio">${data.bio}</p>
-            <div class="social-links" style="justify-content: center; margin-top: 20px;">
-                ${data.social.map(link => `
-                    <a href="${link.url}" ${link.url.startsWith('mailto:') ? '' : 'target="_blank"'} class="social-btn" title="${link.network}">
-                        <i class="${link.icon}"></i>
-                    </a>
-                `).join('')}
+            <div class="profile-container">
+                <div class="profile-sidebar">
+                    <img src="${data.avatar}" alt="${data.name}" class="profile-avatar">
+                    <h1 class="profile-name">${data.name}</h1>
+                    <div class="profile-title">${data.title}</div>
+                    
+                    <div class="profile-contact-list">
+                        ${socialListHTML}
+                    </div>
+                </div>
+                
+                <div class="profile-main" id="about">
+                    <h2 class="about-title">About Me</h2>
+                    <div class="about-text">
+                        <p>${data.about}</p>
+                    </div>
+                </div>
             </div>
         `;
         document.querySelector('.hero-content').innerHTML = heroHTML;
 
-        // Inject About Content
-        if (data.about) {
-            document.getElementById('about-content').innerHTML = `
-                <div class="about-text">
-                    <p>${data.about}</p>
-                </div>
-            `;
-        }
-
-        // Inject Footer Social Links
+        // Inject Footer Social Links (Keep footer simple icon-only if desired, or remove if redundant. 
+        // Usually good to keep footer links. The existing code handles footer injection below.)
         const footerLinksHTML = data.social.map(link => `
             <a href="${link.url}" ${link.url.startsWith('mailto:') ? '' : 'target="_blank"'} class="social-btn">
                 <i class="${link.icon}"></i>
