@@ -28,6 +28,15 @@ async function loadProfile() {
         `;
         document.querySelector('.hero-content').innerHTML = heroHTML;
 
+        // Inject About Content
+        if (data.about) {
+            document.getElementById('about-content').innerHTML = `
+                <div class="about-text">
+                    <p>${data.about}</p>
+                </div>
+            `;
+        }
+
         // Inject Footer Social Links
         const footerLinksHTML = data.social.map(link => `
             <a href="${link.url}" ${link.url.startsWith('mailto:') ? '' : 'target="_blank"'} class="social-btn">

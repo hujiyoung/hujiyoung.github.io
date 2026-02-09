@@ -1,9 +1,10 @@
 {
   "name": "Zhiyang Hu",
-  "title": "Undergrad Student & AI Researcher",
+  "title": "Undergraduate at Wuhan University | AI Security Researcher",
   "email": "zhiyanghu@foxmail.com",
   "location": "Wuhan, China",
-  "bio": "I am a Undergrad student interested in Large Language Models, AI Alignment, and Computer Vision. I love building cool things.",
+  "bio": "I am a senior undergraduate student majoring in Information Security at Wuhan University (Class of 2022). My research focuses on AI Security, particularly in model watermarking, adversarial examples, backdoor attacks, and red teaming for Diffusion Models, LLMs, and VLMs.",
+  "about": "I am currently an undergraduate student at Wuhan University, specializing in Information Security. My research journey is driven by a deep interest in the security and robustness of Artificial Intelligence systems. I am particularly fascinated by the evolving landscape of generative AI and aim to uncover and mitigate potential risks associated with these powerful models. My current research projects involve exploring model watermarking to protect intellectual property, developing robust defenses against adversarial examples and backdoor attacks, and conducting red teaming to evaluate the safety of Large Language Models (LLMs) and Vision-Language Models (VLMs).",
   "avatar": "images/avatar.jpg",
   "social": [
     {
