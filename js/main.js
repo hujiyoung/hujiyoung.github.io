@@ -26,7 +26,9 @@ async function loadProfile() {
                 <div class="profile-sidebar">
                     <img src="${data.avatar}" alt="${data.name}" class="profile-avatar">
                     <h1 class="profile-name">${data.name}</h1>
-                    <div class="profile-title">${data.title}</div>
+                    <div class="profile-affiliations">
+                        ${data.affiliations ? data.affiliations.map(line => `<div>${line}</div>`).join('') : ''}
+                    </div>
                     
                     <div class="profile-contact-list">
                         ${socialListHTML}

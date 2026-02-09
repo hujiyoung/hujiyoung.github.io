@@ -135,7 +135,7 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     position: relative;
-    padding: 140px 0 60px;
+    padding: 180px 0 60px;
 }
 
 .hero-content {
@@ -213,17 +213,21 @@ nav {
 .profile-name {
     font-size: 2.5rem;
     font-weight: 800;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     background: linear-gradient(45deg, var(--accent-color), #8b5cf6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.profile-title {
+.profile-affiliations {
     font-size: 1.1rem;
     color: var(--secondary-text);
     margin-bottom: 30px;
-    line-height: 1.4;
+    line-height: 1.6;
+}
+
+.profile-affiliations div {
+    margin-bottom: 5px;
 }
 
 .profile-contact-list {
