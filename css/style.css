@@ -135,7 +135,8 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     position: relative;
-    padding: 180px 0 60px;
+    padding: 60px 0; /* Reduced padding, using margin for spacing */
+    margin-top: 100px; /* Force push down below fixed header (70px) */
 }
 
 .hero-content {
